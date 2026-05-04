@@ -8,7 +8,7 @@ const dynamicProducts = document.querySelector(".dynamic-products");
 const saree_products = [
 
     {
-        image:"project_images/women's wear/sarees/sarees.jpg",
+        image:"project_images/women's wear/sarees/Sarees.jpg",
         title:"Royal Silk Elegance",
         price:"Rs.3,999"
     },
