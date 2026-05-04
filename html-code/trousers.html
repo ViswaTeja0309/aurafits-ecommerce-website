@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="../css-style-code/tshirts.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <meta  charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;600;700&display=swap"
+         rel="stylesheet">
+
+        <title>BRAND SHOPPING</title>
+
+    </head>
+
+    <body>
+         
+        <nav class="navbar">
+
+            <h2 id="logo">AURAFITS</h2>
+
+            <div class="links">
+            <a href="shop.html">HOME</a>
+            <a href="men.html">MEN</a>
+            <a href="women.html">WOMEN</a>
+            <a href="kids.html">KIDS</a>
+            </div>
+
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input id="input" type="text" placeholder="Search for products , brands and more.. ">
+            </div>
+
+            <section class="icons">
+
+            <div class="profile">
+                <i class="fa-regular fa-circle-user"></i>
+            </div>
+
+            <div class="wishlist">
+
+                <i class="fa-solid fa-heart"></i>
+
+                <span id="wishlist-count">0</span>
+
+            </div>
+
+            <div class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+            </section>
+
+        </nav>
+
+        <section class="products">
+
+            <h2>AURAFITS MEN'S TROUSER COLLECTION</h2>
+
+            <div class="product-container">
+
+                <div class="product-image">
+                    <img src="../project_images/men's wear/trousers/trowser-1.jpg">
+                    <h3>Ivory Classic Trousers</h3>
+                    <p>Rs.2,799</p>
+                    <button class="wishlist-btn">❤️ Wishlist</button>
+                </div>
+                 
+                <div class="product-image">
+                    <img src="../project_images/men's wear/trousers/trowser-2.jpg">
+                    <h3>Urban Navy Tailored Fit</h3>
+                    <p>Rs.2,999</p>
+                    <button class="wishlist-btn">❤️ Wishlist</button>
+                </div>
+
+                <div class="product-image">
+                    <img src="../project_images/men's wear/trousers/trowser-3.jpg">
+                    <h3>Signature Duo Trousers</h3>
+                    <p>Rs.3,499</p>
+                    <button class="wishlist-btn">❤️ Wishlist</button>
+                </div>
+
+
+                <div class="product-image">
+                    <img src="../project_images/men's wear/trousers/trowser-4.jpg">
+                    <h3>Modern Ash Trousers</h3>
+                    <p>Rs.2,999</p>
+                    <button class="wishlist-btn">❤️ Wishlist</button>
+                </div>
+
+
+                <div class="product-image">
+                    <img src="../project_images/men's wear/trousers/trowsers.jpg">
+                    <h3>Modern Gentleman Combo</h3>
+                    <p>Rs.3,999</p>
+                    <button class="wishlist-btn">❤️ Wishlist</button>
+                </div>
+
+
+                <div class="product-image">
+                    <img src="../project_images/men's wear/trousers/trowser-6.jpg">
+                    <h3>Mocha Luxe Trousers</h3>
+                    <p>Rs.2,999</p>
+                    <button class="wishlist-btn">❤️ Wishlist</button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="footer-container">
+
+            <div class="footer-image">
+                <img src="../project_images/men's wear/trousers/trouser-footer.jpg">
+
+            <h3>Tailored for sophistication, designed for effortless everyday elegance.</h3>
+            </div>
+
+        </section>
+        
+        <script>
+
+            let wishlistCount = 0;
+
+            const wishlistButtons = document.querySelectorAll(".wishlist-btn");
+
+            wishlistButtons.forEach((button) => {
+
+                button.addEventListener("click", () => {
+
+                    wishlistCount++;
+
+                    document.getElementById("wishlist-count").textContent = wishlistCount;
+
+                });
+
+            });
+
+</script>
+        
+    </body>
+</html>

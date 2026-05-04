@@ -1,0 +1,564 @@
+body {
+
+    background-color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+
+    display: flex;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06),0 1px 2px rgba(0, 0, 0, 0.04);
+    padding:15px 40px;
+    align-items: center;
+    justify-content:space-between;
+    position: sticky;
+    top:0;
+    z-index: 1000;
+    width:auto;
+}
+
+.links a {
+
+    text-decoration:none;
+    color:#333333;
+    margin:0 15px;
+    transition:0.3s;
+    display:inline-block
+
+}
+
+.links a:hover {
+
+    color:#2563EB;
+    transform:translateY(-2px);
+}
+
+.links a:active {
+
+   color: #111111;
+}
+
+.search-box {
+    position: relative;
+    width: 260px;
+}
+
+.search-box i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 14px;
+}
+
+.search-box input {
+    width:100%;
+    padding: 10px 10px 10px 35px; 
+    border: 1px solid #E5E7EB;
+    border-radius: 6px;
+    outline: none;
+}
+
+.icons {
+
+    display:flex;
+    gap:20px;
+    font-size:20px;
+}
+
+.icons i {
+
+    cursor:pointer;
+    transition:0.3s;
+    color: #333;
+}
+
+.icons i:hover {
+
+    color:#2563EB;
+    transform: translateY(-2px);
+}
+.wishlist {
+
+    position: relative;
+}
+
+#wishlist-count {
+
+    position: absolute;
+    top: -10px;
+    right: -12px;
+    background-color: #EF4444;
+    color: white;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+#logo {
+
+    font-size: 22px;
+    font-weight:700;
+    letter-spacing: 1px;
+    color:#111111
+}
+
+.hero-section {
+
+    background-color:#F6F3EF;
+    padding:20px 40px;
+}
+
+.hero-image img {
+     
+    width:100%;
+    height:420px;
+    display:block;
+    object-fit: cover;
+
+}
+
+.kids-collection {
+
+    background-color:#F3F4F6;
+    margin-top: 20px;
+    padding:80px 100px;
+}
+
+.kids-collection h2 {
+
+    font-size: 28px;
+    margin-bottom:30px;
+    color:#111;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+}
+
+.collection-container {
+
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+}
+
+.card-collection {
+
+    overflow: hidden;
+    position:relative;
+    border-radius:12px;
+    cursor: pointer;
+}
+
+.card-collection a  {
+
+    text-decoration:none;
+    color:#111;
+}
+
+a {
+
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-collection img {
+
+    width:100%;
+    object-fit:cover;
+    height:500px;
+    border-radius:12px;
+    transition:0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    display: block;
+    gap:20px;
+
+}
+
+.card-collection h3 {
+
+    text-align: center;
+    padding-top:10px;
+}
+
+.card-collection:hover img {
+
+    transform:scale(1.05);
+}
+
+.footer {
+
+    background-color:#F6F3EF;
+    padding:20px 40px;
+    margin-top: 20px;
+
+}
+
+.footer-container {
+
+    background-color:#F3F4F6;
+    margin-top: 20px;
+    padding:60px  80px;
+}
+
+.footer-image {
+
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    gap:60px;
+
+}
+
+.footer-image img {
+
+    width:550px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    display: block;
+    border-radius:12px;
+}
+
+.footer-image h3 {
+
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 34px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    color: #374151;
+    max-width: 550px;
+}
+
+.dynamic-container {
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    padding: 80px 100px;
+    background-color: #F3F4F6;
+}
+
+.product-card {
+
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    padding-bottom: 20px;
+}
+
+.product-card img {
+
+    width: 100%;
+    height: 500px;
+    object-fit:cover;
+}
+
+.product-card h3 {
+
+    text-align: center;
+    margin-top: 15px;
+}
+
+.product-card p {
+
+    text-align: center;
+    font-weight: 600;
+}
+
+.wishlist-btn {
+
+    background-color: #111827;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 12px auto 0;
+    display: block;
+    transition: 0.3s ease;
+    font-size: 14px;
+}
+
+.wishlist-btn:hover {
+
+    background-color: #2563EB;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+
+    
+
+    .navbar {
+
+        padding: 15px 30px;
+        gap: 20px;
+    }
+
+    .links {
+
+        gap: 15px;
+    }
+
+    .search-box {
+
+        width: 220px;
+    }
+
+
+    
+    .hero,
+    .hero-section {
+
+        padding: 40px 30px;
+    }
+
+    .hero-image img {
+
+        width: 100%;
+        height: auto;
+    }
+
+
+    
+    .collection-container,
+    .product-container,
+    .dynamic-container,
+    .feature-container,
+    .category-container {
+
+        grid-template-columns: repeat(2,1fr);
+        gap: 25px;
+    }
+
+
+
+    .product-image img,
+    .product-card img,
+    .card-collection img {
+
+        height: 360px;
+    }
+
+
+    
+
+    .products,
+    .womens-collection,
+    .kids-collection,
+    .mens-collection {
+
+        padding: 60px 40px;
+    }
+
+
+
+    .footer-container,
+    .footer-image {
+
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .footer-image img {
+
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+
+    .footer-image h3 {
+
+        font-size: 28px;
+    }
+
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    
+
+    .navbar {
+
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+        position: relative;
+    }
+
+    #logo {
+
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .links {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .links a {
+
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .search-box {
+
+        width: 100%;
+    }
+
+    .search-box input {
+
+        width: 100%;
+    }
+
+    .icons {
+
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        gap: 8px;
+    }
+
+
+   
+
+    .hero,
+    .hero-section {
+
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+
+        font-size: 44px;
+        line-height: 1.1;
+    }
+
+    .hero-text p {
+
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .hero-image img {
+
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+    }
+
+
+   
+
+    .collection-container,
+    .product-container,
+    .dynamic-container,
+    .feature-container,
+    .category-container {
+
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+
+
+    .product-image img,
+    .product-card img,
+    .card-collection img {
+
+        width: 100%;
+        height: 340px;
+        object-fit: cover;
+    }
+
+
+    
+
+    .products,
+    .womens-collection,
+    .kids-collection,
+    .mens-collection {
+
+        padding: 40px 20px;
+    }
+
+    .products h2,
+    .womens-collection h2,
+    .kids-collection h2,
+    .mens-collection h2 {
+
+        font-size: 24px;
+        text-align: center;
+    }
+
+
+    
+
+    .product-image h3,
+    .product-card h3,
+    .card-collection h3 {
+
+        font-size: 18px;
+    }
+
+    .product-image p,
+    .product-card p {
+
+        font-size: 15px;
+    }
+
+
+    
+    .footer-container,
+    .footer-image {
+
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        padding: 40px 20px;
+    }
+
+    .footer-image img {
+
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+    }
+
+    .footer-image h3 {
+
+        font-size: 24px;
+        line-height: 1.6;
+    }
+
+
+  
+
+    button,
+    .wishlist-btn {
+
+        width: 100%;
+        max-width: 280px;
+        margin: 10px auto;
+    }
+
+}
